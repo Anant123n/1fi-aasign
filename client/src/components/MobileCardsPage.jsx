@@ -7,7 +7,7 @@ export default function MobileCardsPage() {
 
   const fetchMobiles = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/mobiles");
+      const response = await fetch("https://onefi-aasign.onrender.com/api/mobiles");
       if (!response.ok) throw new Error("Failed to fetch mobile data");
       const data = await response.json();
       setMobiles(data);
