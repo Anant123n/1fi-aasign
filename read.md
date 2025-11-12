@@ -70,4 +70,47 @@ npx tailwindcss init -p
 # Run the frontend
 npm run dev
 
-# Frontend runs on ➡️ https://1fi-aasign.vercel.app/
+# Frontend runs locally on ➡️ http://localhost:5173
+
+# 🚀 Deployed Frontend
+# Live demo available at:
+# 👉 https://1fi-aasign.vercel.app/
+
+
+
+# this is schema that used
+   {
+  model: {
+    type: String,
+    required: true
+  },
+  company: {
+    type: String,
+    required: true
+  },
+  mrp: {
+    type: Number,
+    required: true
+  },
+  image: {
+    type: String,
+    required: true
+  },
+  // ✅ EMI array field
+  emiPlans: [
+    {
+      months: {
+        type: Number,
+        required: true
+      },
+      amount: {
+        type: Number,
+        required: true
+      },
+      interest: {
+        type: Number, // can be percentage
+        required: true
+      }
+    }
+  ]
+}
