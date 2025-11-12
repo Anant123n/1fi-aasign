@@ -21,11 +21,8 @@ The backend exposes REST APIs, while the frontend (React) consumes them dynamica
 ## ⚙️ Project Setup Instructions
 
 ```bash
-# 🧩 1. Clone the Repository
-git clone https://github.com/<your-username>/mobile-catalog.git
-cd mobile-catalog
 
-# 🗄️ 2. Backend Setup
+# 🗄️ 1. Backend Setup
 cd server
 npm install
 
@@ -75,6 +72,32 @@ npm run dev
 # 🚀 Deployed Frontend
 # Live demo available at:
 # 👉 https://1fi-aasign.vercel.app/
+
+
+
+
+## Api endpoint And Responses
+
+🌐 API Endpoints
+Method	Endpoint	Description
+GET	/api/mobiles	Fetch all mobile records
+
+Example Response:
+
+[
+  {
+    "_id": "64fb12ac7f92389a4c77d1f2",
+    "model": "iPhone 14",
+    "company": "Apple",
+    "mrp": 79999,
+    "image": "https://...",
+    "emiPlans": [
+      { "months": 6, "amount": 14000, "interest": 8 },
+      { "months": 12, "amount": 7200, "interest": 10 }
+    ]
+  }
+]
+
 
 
 
